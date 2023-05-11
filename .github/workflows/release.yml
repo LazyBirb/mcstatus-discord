@@ -30,7 +30,7 @@ jobs:
     - name: Create zip with all important files
       run: |
         mkdir setup-zip
-        cp example.env setup-zip/.env && cp README.md setup-zip/README.md && target/mcstatus-1.0-SNAPSHOT-jar-with-dependencies.jar setup-zip/mcstatus-1.0-SNAPSHOT.jar
+        cp example.env setup-zip/.env && cp README.md setup-zip/README.md && target/mcstatus-1.0-SNAPSHOT.jar setup-zip/mcstatus-1.0-SNAPSHOT.jar
         cd setup-zip
         zip -r ../mcstatus-complete.zip .
         cd ..
